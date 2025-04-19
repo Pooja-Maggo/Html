@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="/website_name.php">
+        <label for="email"> Username: </label><!--Label-->
+        <input type="text" id="email" placeholder="Enter your username or email please" required="True"><hr><!--Input type, placeholder,id-->
+        <label for="password"> Password: </label>
+        <input type="password" id="password" placeholder="Enter your password please"> <hr>
+        Date Of Birth: <input type="date"><hr><!--Date-->
+        file: <input type="file"><hr><!--how to choose file-->
+        color: <input type="color"><br><!--how to choose color-->
+        Range: <input type="range"><br><!--How to choose range-->
+        Press: <input type="button" value="Done"><!--How to create button--><hr>
+        <!--Radio button (choose on option button)-->
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="Others">Others</label>
+        <input type="radio" id="Others" name="gender" value="Other"><hr>
+        <!--Checkboxes-->
+        <label for="C">C</label>
+        <input type="checkbox" name="lang" id="C"  value="C"><hr>
+        <label for="C++">C++</label>
+        <input type="checkbox" name="lang" id="C++"><hr>
+        <label for="Java">Java</label>
+        <input type="checkbox" name="lang" id="java"><hr>
+        <!--SELECT menu-->
+        <label for="Country">Select Country</label>
+        <select name="country" id="Country">
+            <option value="India">India</option>
+            <option value="Uk">UK</option>
+            <option value="USA">USA</option>
+            <option value="Others">other</option>
+        </select><hr>
+        <!--text area-->
+        <textarea name="About yourself" id="about_u" placeholder="please write something about yourself" cols="200" rows="5"></textarea>
+        <hr><input type="submit"><!--Submit button-->
+    </form>
+</body>
+</html>
